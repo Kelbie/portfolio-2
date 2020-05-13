@@ -1,0 +1,59 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Fira Code";
+  color: #9db2c9;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: linear-gradient(
+    #f6d371 0%,
+    #f27a21 10%,
+    #cf2872 50%,
+    #912eb9 90%,
+    #4d58ce 100%
+  );
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.App::after {
+  content: "";
+  position: fixed;
+  background: linear-gradient(
+    #f6d371 0%,
+    #f27a21 10%,
+    #cf2872 50%,
+    #912eb9 90%,
+    #4d58ce 100%
+  );
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.App {
+  padding: 32px;
+  position: relative;
+  background: #15202b;
+  border-radius: 16px;
+  min-height: 100vh;
+}
