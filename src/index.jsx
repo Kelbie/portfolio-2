@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 
 import App from './App.jsx';
 
+var a = 'a';
+
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
