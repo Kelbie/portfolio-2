@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "kelbie",
   "type": "module",
   "version": "1.0.0",
   "description": "React example starter project",
@@ -9,6 +9,8 @@
   ],
   "main": "src/index.jsx",
   "dependencies": {
+    "@types/react": "^16.9.35",
+    "@types/styled-components": "^5.1.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1",

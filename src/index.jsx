@@ -3,9 +3,7 @@ import React from 'react';
 // rome-ignore lint/importDefaultBasename
 import ReactDOM from 'react-dom';
 
-import App from './App.jsx';
-
-var a = 'a';
+import App from './App.tsx';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(

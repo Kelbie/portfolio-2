@@ -13,63 +13,10 @@ body {
   height: 100vh;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  background: linear-gradient(
-    #f6d371 0%,
-    #f27a21 10%,
-    #cf2872 50%,
-    #912eb9 90%,
-    #4d58ce 100%
+:root {
+  --gradient: linear-gradient(
+    #34D0F5 0%,
+    #347EF5 50%,
+    #4D5CCE 100%
   );
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-}
-
-.App::after {
-  content: "";
-  position: fixed;
-  background: linear-gradient(
-    #f6d371 0%,
-    #f27a21 10%,
-    #cf2872 50%,
-    #912eb9 90%,
-    #4d58ce 100%
-  );
-  opacity: 0.1;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
-.App {
-  padding: 32px;
-  position: relative;
-  background: #15202b;
-  min-height: 100vh;
-}
-
-
-.border {
-  content: "";
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  pointer-events: none;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
 }
