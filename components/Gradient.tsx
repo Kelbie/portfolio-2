@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export interface Props {
   className?: string;
 	side: 'left' | 'right' | 'top';
-	children: any[];
+	children: any[] | any;
 }
 
 function Gradient({className, side, children}: Props) {
