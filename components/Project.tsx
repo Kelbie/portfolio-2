@@ -96,8 +96,8 @@ export default styled(Project)`
 
 
   .tags {
-    display: block;
     > * {
+      display: inline-block;
       margin-right: 8px;
     }
   }
