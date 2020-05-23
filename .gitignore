@@ -38,3 +38,9 @@ jspm_packages
 .next
 
 yarn.lock
+
+.next/
+node_modules/
+/npm-debug.log
+.DS_Store
+out/
