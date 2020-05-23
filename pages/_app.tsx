@@ -3,6 +3,7 @@ import Gradient from '../components/Gradient'
 import Border from '../components/Border'
 import Overlay from '../components/Overlay'
 import Header from "../components/Header";
+import Pattern from "../components/Pattern";
 import Footer from "../components/Footer";
 
 import styled from 'styled-components'
@@ -17,6 +18,7 @@ function MyApp({ className, Component, pageProps }) {
       <Gradient side="left" />
       <Component {...pageProps} />
       <Gradient side="right" />
+      <Pattern />
       {/* <Footer /> */}
     </div>
   </div>
