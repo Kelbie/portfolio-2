@@ -10,10 +10,9 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 export interface Props {
   className?: string;
   img: string;
-  children: string;
 }
 
-function Img({className, img, children}: Props) {
+function Img({className, img}: Props) {
   return <div className={className}>
     <FontAwesomeIcon icon={faLink} />
     <img src={img} alt=""/>
