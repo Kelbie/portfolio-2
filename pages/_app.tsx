@@ -17,7 +17,7 @@ function MyApp({ className, Component, pageProps }) {
       <Gradient side="left" />
       <Component {...pageProps} />
       <Gradient side="right" />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   </div>
 }
