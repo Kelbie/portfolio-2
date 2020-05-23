@@ -38,7 +38,7 @@ export default styled(Border)`
 	left: 0px;
 	top: 0;
 	bottom: 0;
-	height: 100%;
+	height: 100vh;
 	pointer-events: none;
   z-index: ${props => props.index};
   width: 100vw;
