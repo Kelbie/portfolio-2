@@ -17,5 +17,4 @@ function Section({className, children}: Props) {
 }
 
 export default styled(Section)`
-    
 `;

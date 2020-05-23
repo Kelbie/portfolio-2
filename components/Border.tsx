@@ -6,15 +6,16 @@ import styled from 'styled-components';
 
 export interface Props {
   className?: string;
+  index: number;
 }
 
 function Border({className}: Props) {
   return <div className={className}>
       <svg>
-      <defs>
+        <defs>
         <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stopColor="#34D0F5" />
-          <stop offset="50%" stopColor=" #347EF5" />
+          <stop offset="50%" stopColor="#347EF5" />
           <stop offset="100%" stopColor="#4D5CCE" />
         </linearGradient>
       </defs>
@@ -39,7 +40,7 @@ export default styled(Border)`
 	bottom: 0;
 	height: 100%;
 	pointer-events: none;
-  z-index: 11001;
+  z-index: ${props => props.index};
   width: 100vw;
   svg {
     width: 100%;

@@ -9,13 +9,13 @@ export interface Props {
 }
 
 function Footer({className}: Props) {
-  return <div className={className}>
+  return <footer className={className}>
       1
-    </div>;
+    </footer>;
 }
 
 export default styled(Footer)`
-    width: 100vw;
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;

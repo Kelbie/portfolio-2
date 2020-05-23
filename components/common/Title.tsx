@@ -16,7 +16,5 @@ function Title({className, children}: Props) {
 }
 
 export default styled(Title)`
-  position: relative;
-  z-index: 1000;
   font-weight: normal;
 `;

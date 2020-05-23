@@ -3,45 +3,38 @@ import React from 'react';
 
 // rome-ignore lint/importDefaultBasename
 import styled from 'styled-components';
-import P from './common/P';
 import Title from './common/Title';
+import P from './common/P';
+import Tag from './common/Tag';
 
 export interface Props {
   className?: string;
   title: string;
-  description: string;
+  summary: string;
   tags: Array<string>;
 }
 
-function Project({className, title, description, tags}: Props) {
+function Post({className, title, summary, tags = []}: Props) {
   return <div className={className}>
-      <img src="" alt="" />
-      <Title>{title}</Title>
-      <P>{description}</P>
+      <a href="/blog/test">{title}</a>
+      <P>{summary}</P>
       <div className="tags">
-        {tags.map((tag) => {
-        return <span key={tag}>#{tag}</span>;
+        {tags.map((tag: string) => {
+        return <Tag key={tag}>#{tag}</Tag>;
       })}
       </div>
     </div>;
 }
 
-export default styled(Project)`
-  width: min-content;
-
+export default styled(Post)`
   img {
-    position: relative;
-    z-index: 1000;
-    width: 300px;
-    height: 169px;
+    width: 192px;
+    height: 108px;
     background: #1B2A38;
   }
 
   .tags {
     display: flex;
     gap: 1ch;
-    span {
-      color: rgba(255,255,255.8);
-    }
   }
 `;

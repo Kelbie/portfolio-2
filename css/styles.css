@@ -1,0 +1,32 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Fira Code";
+  color: #9db2c9;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --gradient: linear-gradient(270deg, #f6d371, #f27a21, #cf2872, #912eb9, #4d58ce);
+}
+
+/* p, pre, code, strong, h1, h2, h3, h4, h5, h6, ul, li {
+  color: #425a73;
+}
+
+ol, ul {
+  padding-left: 40px;
+} */
+
+.horizontal::after {
+  padding-right: max(32px, calc(50vw - 800px / 2));
+  height: 100px;
+  content: "";
+}

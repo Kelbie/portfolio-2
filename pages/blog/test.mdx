@@ -1,0 +1,50 @@
+Suppose you want to offer students a discount on your website how would you do that? You could authenticate their email address but that takes them off the website because they must leave the page to go look at their email. What if you could log them in with a student portal they are familiar with.
+
+That's where Azure Active Directory comes to the rescue!
+
+Azure Active Directory is used by thousands of educational institutions all across the world which makes it the ideal platform for authenticating students. The Azure Login Portal also provides students with a familiar splash screen
+
+# Registering your web app Clone the repo 
+
+To get started we are going to clone an Azure boilerplate for Node.js which can be found in [this GitHub repo]().
+
+# Azure Configuration 
+
+##  Whitelisting Students 
+
+An important consideration to keep in mind is that you cannot restrict access to your login portal to users that have already used it at least once.
+
+1. Sign in to the [Azure Portal]().
+
+2. Select **Azure Active Directory** > **Users** > **User settings**.
+3. Under **External users**, select **Manage external collaboration settings**.
+4. Under **Collaboration restrictions**, select **Allow invitations only to the specified domains (most restrictive)**.
+5. Under **TARGET DOMAINS**, enter the name of one of the domains that you want to allow. For example: `*.edu`, `*.edu.*` and `*.ac.*`.
+
+For more information on Azure whitelisting/blacklisting view the [official Azure documentation]().
+
+# Greeting users with a personalized splash screen
+
+This is optional but it's probably a good idea to ask the user what educational institution they are a part of before sending them to the Azure Login Portal, that way they are presented with a familiar splash screen and are less likely to try and sign in with a personal outlook account.
+
+I have gone to the liberty of publishing an npm package called "studentlog" so that you can easily generate splash screens for university students however right now it only has UK colleges and universities since I haven't had time to add other universities.
+
+If you want to append universities yourself you can do as follows:
+
+```
+module.exports = [
+    ...domains,
+    {
+        label: "University of X",
+        value: "x.edu"
+    }
+]
+```
+
+# Important Considerations
+
+Whilst this is a great method for verifying a users status as a student it should not be the only method used for authentication because it's possible for users to lose access to their student email addresses which can lock users out of your website.
+
+# Production Environment
+
+# Conclusion
