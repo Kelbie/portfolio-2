@@ -60,6 +60,10 @@ export default styled(Header)`
   a {
     margin-left: 16px;
     height: max-content;
-    font-size: 24px;
+    
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 `;
