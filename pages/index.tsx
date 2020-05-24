@@ -52,6 +52,7 @@ const projects: Project[] = [
     tags: [],
     links: {
       github: "https://github.com/KevinKelbie/vscode-bitcoin",
+      vscode: "awd"
     }
   },
   {
@@ -281,11 +282,6 @@ export default styled(Index)`
     > * {
       margin-right: 6px;
     }
-  }
-
-  ${Section} svg {
-    width: 32px;
-    height: 32px;
   }
 
   ${Section} > h3, .inline > h3 {
