@@ -62,7 +62,7 @@ export default styled(Header)`
     height: max-content;
     
     svg {
-      width: 24px;
+      width: 24px !important;
       height: 24px;
     }
   }

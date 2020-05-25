@@ -2,6 +2,7 @@
 import React from 'react';
 
 import Project from '../components/Project';
+import Skill from '../components/Skill';
 import Border from '../components/Border';
 import Section from '../components/Section';
 import P from '../components/common/P';
@@ -11,8 +12,8 @@ import Gradient from '../components/Gradient';
 import Post from '../components/Post';
 import Title from '../components/common/Title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-import { faOsi, faDev } from '@fortawesome/free-brands-svg-icons';
+import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle, faTools } from "@fortawesome/free-solid-svg-icons";
+import { faOsi, faDev, faReact, faNodeJs, faHtml5, faCss3, faPython, faAdobe, faGit, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 export interface Props {
   className?: string;
@@ -95,9 +96,29 @@ function Index({className}: Props) {
             <h3>ABOUT</h3>
           </div>
           <div>
-            <P>Lorem ipsum dolor sit amet, ferri petentium ne sed. Eu eum hinc adolescens, est maiestatis scribentur complectitur id. Duo affert vocent ut, et autem expetendis eos. Vim ei autem postulant liberavisse. Ex est fabulas temporibus, ut facilisis pertinacia nam.</P>
+            <P>Hi, my name is Kevin Kelbie and I'm a 4th year student at Robert Gordon University studying Computing (Application Software Development).</P>
             <br />
-            <P>Id pro labores urbanitas adipiscing, an duis sanctus indoctum sit, has an oratio vocibus. Cum eius offendit liberavisse eu, quo nibh blandit delectus ei. Ne repudiare adolescens eum, ut commune gubergren per. Postea melius ut vis. Eum eu augue tamquam, id duo laoreet graecis, ne quis aperiam sea. Pro at semper laboramus.</P>
+            <P>In my free time, I like to work on programming projects some of which you can see below.</P>
+            <br />
+            <div className="inline" style={{display: "inline"}}>
+              <P style={{marginRight: "12px"}}>If you need to contact me you can send me an email at:</P><a href="">kevin@kelbie.dev</a>
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <div className="inline">
+            <FontAwesomeIcon icon={faTools} />
+            <h3>SKILLS</h3>
+          </div>
+          <div>
+            <Skill name={"React"} icon={faReact} />
+            <Skill name={"Node"} icon={faNodeJs} />
+            <Skill name={"HTML5"} icon={faHtml5} />
+            <Skill name={"CSS3"} icon={faCss3} />
+            <Skill name={"Python"} icon={faPython} />
+            <Skill name={"Adobe XD"} icon={faAdobe} />
+            <Skill name={"Git"} icon={faGit} />
+            <Skill name={"Docker"} icon={faDocker} />
           </div>
         </Section>
         <div className="h">
