@@ -29,6 +29,7 @@ export default styled(Img)`
   border-radius: 8px;
   overflow: hidden;
   background: black;
+  border: 1px solid #0f161d;
   
 
   &:hover {

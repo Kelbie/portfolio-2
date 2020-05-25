@@ -41,6 +41,7 @@ const projects: Project[] = [
   {
     title: "Statechain Server & Explorer",
     description: `An off-chain scaling solution for Blockchain-based cryptocurrencies.`,
+    img: "/Statechain.png",
     tags: [],
     links: {
       github: "",
@@ -57,6 +58,7 @@ const projects: Project[] = [
   },
   {
     title: "Bitcoin GraphQL Proxy",
+    img: "/BitcoinGraphQL.png",
     description: `A library that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.`,
     tags: ["bitcoin", "graphql", "node", "postgresql"],
     links: {
@@ -379,7 +381,7 @@ export default styled(Index)`
     }
 
     > div:last-child {
-      margin-left: 0px;
+      margin-right: 0px;
     }
     
     > div:first-child {
