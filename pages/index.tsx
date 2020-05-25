@@ -101,7 +101,7 @@ function Index({className}: Props) {
             <P>In my free time, I like to work on programming projects some of which you can see below.</P>
             <br />
             <div className="inline" style={{display: "inline"}}>
-              <P style={{marginRight: "12px"}}>If you need to contact me you can send me an email at:</P><a href="">kevin@kelbie.dev</a>
+              <P style={{marginRight: "12px", display: "inline"}}>If you need to contact me you can send me an email at:</P><a href="">kevin@kelbie.dev</a>
             </div>
           </div>
         </Section>
