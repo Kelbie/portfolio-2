@@ -20,24 +20,41 @@ export interface Props {
 
 function Skill({className, name, icon}: Props) {
   return <div className={className}>
-      <FontAwesomeIcon icon={icon} />
-      {name}
+      <div>
+        <FontAwesomeIcon icon={icon} />
+        {name}
+      </div>
     </div>;
 }
 
 export default styled(Skill)`
-  padding: 16px;
   display: inline-block;
-  border-radius: 8px;
-  border: 1px solid #0f161d;
-  background: #15202b;
-  z-index: 10000;
-  position: relative;
-  margin-right: 8px;
-  margin-bottom: 8px;
-
-  > *:first-child {
+  div {
+    padding: 16px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #0f161d;
+    background: #15202b;
+    z-index: 999;
+    position: relative;
     margin-right: 8px;
+    margin-bottom: 8px;
+    color: transparent;
+  
+    > *:first-child {
+      margin-right: 8px;
+  
+    }
+  }
+
+  position: relative;
+
+  &::after {
+    content: "${props => props.name}";
+    z-index: 10000;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
   }
 
 `;
