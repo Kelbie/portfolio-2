@@ -51,7 +51,7 @@ export default styled(Skill)`
 
   &::after {
     content: "${props => props.name}";
-    z-index: 999;
+    z-index: 1000;
     position: absolute;
     right: 25px;
     bottom: 25px;
