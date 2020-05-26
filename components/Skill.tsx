@@ -21,7 +21,7 @@ export interface Props {
 
 function Skill({className, name, icon, svg}: Props) {
   return <div className={className}>
-      <div>
+      <div style={{display: 'flex'}}>
         {icon && 
           <FontAwesomeIcon icon={icon} />
         }
