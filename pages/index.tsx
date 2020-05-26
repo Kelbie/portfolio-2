@@ -221,34 +221,17 @@ function Index({className}: Props) {
               <h3>BLOG</h3>
             </div>
             <div className="vertical">
-              <Post title={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
-              summary={`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi enim erit isdem istis fortasse iam utendum. Sed haec quidem liberius ab eo dicuntur et saepius. Idemne potest esse dies saepius, qui semel fuit? An hoc usque quaque, aliter in vita? Ac tamen hic mallet non dolere.
-
-                Duo Reges: constructio interrete. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Erat enim Polemonis. Quod eo liquidius faciet, si perspexerit rerum inter eas verborumne sit controversia. Nunc de hominis summo bono quaeritur; Intrandum est igitur in rerum naturam et penitus quid ea postulet pervidendum; Id quaeris, inquam, in quo, utrum respondero, verses te huc atque illuc necesse est. Omnium enim rerum principia parva sunt, sed suis progressionibus usa augentur nec sine causa; Post enim Chrysippum eum non sane est disputatum. Isto modo, ne si avia quidem eius nata non esset.
-              `}
-              tags={['tag']} />
-              <Post title={'Honesta oratio, Socratica, Platonis etiam. Satis est ad hoc responsum.'}
-              summary={`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Stulti autem malorum memoria torquentur, sapientes bona praeterita grata recordatione renovata delectant. Quod quidem iam fit etiam in Academia. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Recte, inquit, intellegis. Hic, qui utrumque probat, ambobus debuit uti, sicut facit re, neque tamen dividit verbis. Bona autem corporis huic sunt, quod posterius posui, similiora. At ille pellit, qui permulcet sensum voluptate. Duo Reges: constructio interrete. Nihil illinc huc pervenit. Quamquam id quidem licebit iis existimare, qui legerint.
-
-                Apparet statim, quae sint officia, quae actiones. Aut, Pylades cum sis, dices te esse Orestem, ut moriare pro amico? Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Hoc est non dividere, sed frangere. Id enim volumus, id contendimus, ut officii fructus sit ipsum officium. Quae cum dixisset, finem ille. Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem.
-              `}
-              tags={['tag']} />
-              <Post title={'Hoc sic expositum dissimile est superiori.'}
-              summary={`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulsi recurrant? At habetur! Et ego id scilicet nesciebam! Sed ut sit, etiamne post mortem coletur? Teneo, inquit, finem illi videri nihil dolere.
-
-                Et ille ridens: Video, inquit, quid agas; Quae cum magnifice primo dici viderentur, considerata minus probabantur. Ego vero volo in virtute vim esse quam maximam; Duo Reges: constructio interrete. Isto modo, ne si avia quidem eius nata non esset. Faceres tu quidem, Torquate, haec omnia; Quod ea non occurrentia fingunt, vincunt Aristonem;
-              `}
-              tags={['tag']} />
-              <Post title={'Hos contra singulos dici est melius.'}
-              summary={`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi quidem Antiochum, quem audis, satis belle videris attendere. Quod si ita sit, cur opera philosophiae sit danda nescio. Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur.
-
-                At certe gravius. Duo Reges: constructio interrete. Qui potest igitur habitare in beata vita summi mali metus? Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Ubi ut eam caperet aut quando? Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente vis naturae quasi per caliginem cernitur;
-              `}
-              tags={['tag']} />
+              <Post title={'Student Authentication using Azure & Node.js'}
+              summary={<>
+                <P>
+                  Suppose you want to offer students a discount on your website how would you do that? You could authenticate their email address but that takes them off the website because they must leave the page to go look at their email. What if you could log them in with a student portal they are familiar with.
+                </P>
+                <br />
+                <P>
+                  That's where Azure Active Directory comes to the rescue!
+                </P>
+              </>}
+              tags={['Azure', 'NodeJS']} />
             </div>
           </Section>
         </div>
