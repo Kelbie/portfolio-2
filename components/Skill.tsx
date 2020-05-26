@@ -15,13 +15,19 @@ import { faOsi, faDev, faGithub } from '@fortawesome/free-brands-svg-icons';
 export interface Props {
   className?: string;
   name: string;
-  icon: any;
+  icon?: any;
+  svg?: any;
 }
 
-function Skill({className, name, icon}: Props) {
+function Skill({className, name, icon, svg}: Props) {
   return <div className={className}>
       <div>
-        <FontAwesomeIcon icon={icon} />
+        {icon && 
+          <FontAwesomeIcon icon={icon} />
+        }
+        {
+          svg && svg
+        }
         {name}
       </div>
     </div>;
@@ -43,7 +49,7 @@ export default styled(Skill)`
   
     > *:first-child {
       margin-right: 8px;
-  
+      align-self: center;
     }
   }
 

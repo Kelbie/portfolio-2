@@ -8,8 +8,8 @@ import Tag from './common/Tag';
 import Title from './common/Title';
 import Img from './common/Img';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle, faLink } from "@fortawesome/free-solid-svg-icons";
-import { faOsi, faDev, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export interface Props {
   className?: string;
