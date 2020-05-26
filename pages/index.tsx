@@ -59,7 +59,7 @@ const projects: Project[] = [
   {
     title: "Bitcoin GraphQL Proxy",
     img: "/BitcoinGraphQL.png",
-    description: `A library that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.`,
+    description: `An API that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.`,
     tags: ["bitcoin", "graphql", "node", "postgresql"],
     links: {
       github: "https://github.com/KevinKelbie/bitcoin-graphql",
@@ -67,13 +67,13 @@ const projects: Project[] = [
   },
   {
     title: "Korean Typing Game",
-    description: ``,
+    description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the syllabic blocks into individual syllables to make them easier to identify.`,
     tags: [],
     links: {}
   },
   {
     title: "Github Enhancement Suite",
-    description: ``,
+    description: `The GitHub Enhancement Suite is a set of miscellaneous tools to enhance a developers GitHub experience.`,
     tags: [],
     links: {}
   },
@@ -189,6 +189,7 @@ function Index({className}: Props) {
             <div className="inline">
               <FontAwesomeIcon icon={faCode} />
               <h3>PROJECTS</h3>
+              <P>({projects.length})</P>
             </div>
             <div className="horizontal">
               {
