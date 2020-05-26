@@ -1,21 +1,39 @@
 // rome-ignore lint/importDefaultBasename
-import React from 'react';
+import React, { useState } from 'react';
 
 // rome-ignore lint/importDefaultBasename
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faPlay } from "@fortawesome/free-solid-svg-icons";
+
+import ReactPlayer from "react-player";
+
 
 export interface Props {
   className?: string;
   img: string;
+  video?: string;
 }
 
-function Img({className, img}: Props) {
-  return <div className={className}>
-    <FontAwesomeIcon icon={faLink} />
-    <img src={img} alt=""/>
+function Img({className, img, video}: Props) {
+  const [play, setPlay] = useState(false);
+  return <div className={className} onClick={() => setPlay(true)}>
+      {
+        video !== undefined ? 
+          <FontAwesomeIcon icon={faPlay} /> :
+          <FontAwesomeIcon icon={faLink} />
+      }
+      {
+        video && play ?
+        <ReactPlayer url={video} playing width="100%" height="100%" config={{
+          youtube: {
+            playerVars: { modestbranding: 1 }
+          }
+        }} /> : <>
+          <img src={img} alt=""/>
+        </>
+      }
   </div> 
   
 }
@@ -34,7 +52,7 @@ export default styled(Img)`
 
   &:hover {
     svg {
-      opacity: 0.75;
+      opacity: 0.99;
     }
   }
   

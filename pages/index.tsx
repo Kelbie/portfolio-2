@@ -194,7 +194,9 @@ function Index({className}: Props) {
             <div className="horizontal">
               {
                 projects.map(project => {
-                  return <Project title={project.title}
+                  return <Project 
+                  title={project.title}
+                  video={'https://www.youtube.com/watch?v=ysz5S6PUM-U'}
                   img={project.img}
                   description={project.description}
                   tags={project.tags}

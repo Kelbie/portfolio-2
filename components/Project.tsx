@@ -11,19 +11,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faOsi, faDev, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-
 export interface Props {
   className?: string;
   title: string;
   description: string;
   tags: Array<string>;
   img: string;
+  video?: string;
   links: { vscode?: string, website?: string, github?: string };
 }
 
-function Project({className, title, description, tags, img, links}: Props) {
+function Project({className, title, description, tags, img, links, video}: Props) {
   return <div className={className}>
-      <Img img={img} />
+      <Img img={img} video={video} />
       <Title>{title}</Title>
       <P>{description}</P>
       <div className="tags">
