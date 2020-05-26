@@ -29,7 +29,7 @@ function Header({className}: Props) {
 
 export default styled(Header)`
   top: 0px;
-  background: rgba(21, 32, 43, 0.96);
+  background: rgba(21, 33, 44, 0.96);
   z-index: 1002;
   position: absolute;
   pointer-events: none;
