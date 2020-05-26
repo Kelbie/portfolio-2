@@ -139,12 +139,12 @@ function Index({className}: Props) {
                 [
                   {
                     company: "Robert Gordon University",
-                    title: "Fullstack Developer",
+                    title: "Software Developer",
                     year: "2020"
                   },
                   {
                     company: "Agile Resource",
-                    title: "Fullstack Developer",
+                    title: "Software Developer",
                     year: "2019"
                   }
                 ].map(({company, title, year}, index) => {
