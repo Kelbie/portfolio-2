@@ -57,4 +57,9 @@ export default styled(Skill)`
     bottom: 25px;
   }
 
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
 `;
