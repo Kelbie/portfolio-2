@@ -13,10 +13,11 @@ body,
 body {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 body > div {
+  width: 100vw;
+  height: 100vh; /* https://github.com/w3c/csswg-drafts/issues/865 */
   overflow-x: hidden; /* prevent scroll in safari */
 }
 
