@@ -14,7 +14,7 @@ export interface Props {
 }
 
 function Header({className}: Props) {
-  return <Gradient className={className} side={"top"}>
+  return <div className={className}>
     <h1>Kevin Kelbie</h1>
     <div className="links">
       <a href={"https://www.linkedin.com/in/kelbie/"}>
@@ -24,10 +24,19 @@ function Header({className}: Props) {
         <FontAwesomeIcon  icon={faGithub} />
       </a>
     </div>
-  </Gradient>
+  </div>
 }
 
 export default styled(Header)`
+  height: 100px;
+  top: 0px;
+  background: rgba(21, 32, 43, 0.96);
+  z-index: 1002;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  border-bottom: 1px solid #0f161d;
+
   position: sticky;
   z-index: 1002;
   pointer-events: auto;
@@ -41,6 +50,7 @@ export default styled(Header)`
   display: flex;
   justify-content: space-between;
 
+  left: 0;
   h1 {
     padding-left: max(32px, calc(50vw - 800px / 2));
     position: relative;

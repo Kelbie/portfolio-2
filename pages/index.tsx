@@ -256,6 +256,8 @@ function Index({className}: Props) {
 }
 
 export default styled(Index)`
+  margin-top: 24px;
+  
   .kevin-kelbie {
     z-index: 10;
   }
