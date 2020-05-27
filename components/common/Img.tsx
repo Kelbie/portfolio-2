@@ -20,7 +20,7 @@ function Img({className, img, video}: Props) {
   const [play, setPlay] = useState(false);
   return <div className={className} onClick={() => setPlay(true)}>
       {
-        video !== undefined ? 
+        video !== undefined && play === false ? 
           <FontAwesomeIcon icon={faPlay} /> :
           <FontAwesomeIcon icon={faLink} />
       }
