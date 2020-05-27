@@ -59,6 +59,7 @@ export default styled(Header)`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 32px;
   }
 
   h1 {
