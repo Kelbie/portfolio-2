@@ -59,6 +59,10 @@ export default styled(Project)`
   max-width: calc(100vw - 64px);
   vertical-align:top;
 
+  > * {
+    width: 100%;
+  }
+
   .links {
     display: flex;
   }
