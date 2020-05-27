@@ -55,6 +55,10 @@ function Project({className, title, description, tags, img, links, video}: Props
 }
 
 export default styled(Project)`
+  width: 300px;
+  max-width: calc(100vw - 64px);
+  vertical-align:top;
+
   .links {
     display: flex;
   }
@@ -73,7 +77,6 @@ export default styled(Project)`
     }
   }
 
-  width: 300px;
   &:hover {
     /* transform: translateY(8px); */
     > :first-child {

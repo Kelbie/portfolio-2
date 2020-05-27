@@ -39,8 +39,9 @@ function Img({className, img, video}: Props) {
 }
 
 export default styled(Img)`
-  width: 300px;
-  height: 169px;
+  /* width: 300px; */
+  /* height: 169px; */
+  width: 100%;
   position: relative;
   z-index: 1000;
   cursor: pointer;
@@ -48,6 +49,7 @@ export default styled(Img)`
   overflow: hidden;
   background: black;
   border: 1px solid #0f161d;
+  padding-top: 56.25%;
   
 
   &:hover {
@@ -66,8 +68,15 @@ export default styled(Img)`
   }
 
   > img {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     transition: 0.4s ease 0s;
     width: 100%;
     height: 100%;
+  }
+  
+  >div {
+    position: absolute;
+    top: 0;
   }
 `;

@@ -358,7 +358,6 @@ export default styled(Index)`
 
   .horizontal {
     position: relative;
-    display: flex;
     width: 100vw;
     overflow: scroll;
     overflow-y: hidden;
@@ -366,10 +365,12 @@ export default styled(Index)`
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    flex: 1;
+    white-space: nowrap;
     
     > div {
+      display: inline-block;
       margin-right: 32px;
+      white-space: break-spaces;
     }
 
     > div:last-child {
