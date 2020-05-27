@@ -15,14 +15,16 @@ export interface Props {
 
 function Header({className}: Props) {
   return <div className={className}>
-    <h1>Kevin Kelbie</h1>
-    <div className="links">
-      <a href={"https://www.linkedin.com/in/kelbie/"}>
-        <FontAwesomeIcon  icon={faLinkedin} />
-      </a>
-      <a href={"https://github.com/KevinKelbie/"}>
-        <FontAwesomeIcon  icon={faGithub} />
-      </a>
+    <div>
+      <h1>Kevin Kelbie</h1>
+      <div className="links">
+        <a href={"https://www.linkedin.com/in/kelbie/"}>
+          <FontAwesomeIcon  icon={faLinkedin} />
+        </a>
+        <a href={"https://github.com/KevinKelbie/"}>
+          <FontAwesomeIcon  icon={faGithub} />
+        </a>
+      </div>
     </div>
   </div>
 }
@@ -50,8 +52,17 @@ export default styled(Header)`
   justify-content: space-between;
 
   left: 0;
+
+  > div {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   h1 {
-    padding-left: max(32px, calc(50vw - 800px / 2));
+    /* padding-left: max(32px, calc(50vw - 800px / 2)); */
     position: relative;
     z-index: 100;
     padding-top: 32px;
@@ -63,7 +74,7 @@ export default styled(Header)`
     display: flex;
     height: max-content;
     align-self: center;
-    padding-right: max(32px, calc(50vw - 800px / 2));
+    /* padding-right: max(32px, calc(50vw - 800px / 2)); */
   }
 
   a {
