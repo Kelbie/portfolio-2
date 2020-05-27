@@ -370,7 +370,7 @@ export default styled(Index)`
     > div {
       display: inline-block;
       margin-right: 32px;
-      white-space: break-spaces;
+      white-space: wrap;
     }
 
     > div:last-child {
