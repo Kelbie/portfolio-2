@@ -12,11 +12,12 @@ export interface Props {
   title: string;
   summary: string;
   tags: Array<string>;
+  url: string;
 }
 
-function Post({className, title, summary, tags = []}: Props) {
+function Post({className, title, summary, tags = [], url}: Props) {
   return <div className={className}>
-      <a href="/blog/test">{title}</a>
+      <a href={"/blog/" + url}>{title}</a>
       <P>{summary}</P>
       <div className="tags">
         {tags.map((tag: string) => {

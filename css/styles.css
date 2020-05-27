@@ -2,10 +2,10 @@
 
 html,
 body,
-* {
+*:not(.blog) {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   font-family: "Fira Code";
   color: #9db2c9;
   -webkit-overflow-scrolling: touch;
@@ -14,6 +14,7 @@ body,
 body {
   width: 100vw;
   height: 100vh;
+  margin: 0;
 }
 
 body > div {
@@ -40,4 +41,27 @@ ol, ul {
   padding-right: max(32px, calc(50vw - 800px / 2));
   height: 100px;
   content: "";
+}
+
+.blog {
+  margin-top: 32px;
+}
+
+.blog > * {
+  position: relative;
+  z-index: 1000;
+}
+
+.blog > a {
+  z-index: 0;
+}
+
+.blog > ol, .blog > ul {
+  list-style-position: outside;
+  margin-left: 1em;
+}
+
+.blog > p {
+  margin: 0.95em 0 1.2em;
+  padding: 0.2em;
 }

@@ -54,6 +54,11 @@ export default styled(Header)`
   left: 0;
 
   padding: 0 32px;
+
+  h1 {
+    margin: 0;
+  }
+
   > div {
     max-width: 800px;
     margin: auto;

@@ -99,9 +99,7 @@ function Index({className}: Props) {
           </div>
           <div>
             <P>Hi, my name is Kevin Kelbie and I'm a 4th year student at Robert Gordon University studying Computing (Application Software Development).</P>
-            <br />
             <P>In my free time, I like to work on programming projects some of which you can see below.</P>
-            <br />
             <div className="inline" style={{display: "inline"}}>
               <P style={{marginRight: "12px", display: "inline"}}>If you need to contact me you can send me an email at:</P><a href="">kevin@kelbie.dev</a>
             </div>
@@ -227,12 +225,11 @@ function Index({className}: Props) {
               <h3>BLOG</h3>
             </div>
             <div className="vertical">
-              <Post title={'Student Authentication using Azure & Node.js'}
+              <Post url={"student-authentication-using-azure-nodejs"} title={'Student Authentication using Azure & Node.js'}
               summary={<>
                 <P>
                   Suppose you want to offer students a discount on your website how would you do that? You could authenticate their email address but that takes them off the website because they must leave the page to go look at their email. What if you could log them in with a student portal they are familiar with.
                 </P>
-                <br />
                 <P>
                   That's where Azure Active Directory comes to the rescue!
                 </P>
@@ -259,6 +256,7 @@ export default styled(Index)`
 
     > * {
       grid-column: 2;
+      margin: 0;
     }
 
     > .line {
