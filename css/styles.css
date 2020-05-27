@@ -8,6 +8,7 @@ body,
   margin: 0;
   font-family: "Fira Code";
   color: #9db2c9;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
