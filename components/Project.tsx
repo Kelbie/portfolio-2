@@ -58,6 +58,7 @@ export default styled(Project)`
   width: 300px;
   max-width: calc(100vw - 64px);
   vertical-align:top;
+  white-space: normal;
 
   > * {
     width: 100%;
