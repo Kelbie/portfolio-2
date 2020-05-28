@@ -110,7 +110,7 @@ export default styled(Project)`
     margin-bottom: -8px;
   }
 
-  transition: 0.4s ease 0s;
+  transition: margin-bottom 0.4s ease 0s;
   > :first-child {
     transition: 0.4s ease 0s;
   }
