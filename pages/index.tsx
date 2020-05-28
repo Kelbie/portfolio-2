@@ -22,6 +22,7 @@ export interface Props {
 interface Project {
   title: string;
   img?: string;
+  video?: string;
   description: string;
   tags: string[];
   links?: { github?: string, website?: string, vscode?: string };
@@ -31,6 +32,7 @@ const projects: Project[] = [
   {
     title: "StudentLog",
     img: "/StudentLog.png",
+    video: "https://youtu.be/j8Ma9xcLlm0",
     description: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.`,
     tags: ["react", "graphql", "node", "redux"],
     links: {
@@ -42,6 +44,7 @@ const projects: Project[] = [
     title: "Statechain Server & Explorer",
     description: `An off-chain scaling solution for Blockchain-based cryptocurrencies.`,
     img: "/Statechain.png",
+    video: "https://www.youtube.com/watch?v=3tdQJ4k8goE",
     tags: [],
     links: {
       github: "",
@@ -51,6 +54,7 @@ const projects: Project[] = [
   {
     title: "VSCode Bitcoin Extension",
     description: `A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, debugging, code formatting, and code executing on the Bitcoin network.`,
+    video: "https://youtu.be/A1wjnfsDRJs",
     tags: [],
     links: {
       github: "https://github.com/KevinKelbie/vscode-bitcoin",
@@ -198,7 +202,7 @@ function Index({className}: Props) {
                 projects.map(project => {
                   return <Project 
                   title={project.title}
-                  video={'https://www.youtube.com/watch?v=ysz5S6PUM-U'}
+                  video={project.video}
                   img={project.img}
                   description={project.description}
                   tags={project.tags}

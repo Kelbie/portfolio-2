@@ -14,15 +14,18 @@ export interface Props {
   className?: string;
   img: string;
   video?: string;
+  play: any;
+  setPlay: any;
 }
 
-function Img({className, img, video}: Props) {
-  const [play, setPlay] = useState(false);
+function Img({className, img, video, play, setPlay}: Props) {
   return <div className={className} onClick={() => setPlay(true)}>
       {
-        video !== undefined && play === false ? 
-          <FontAwesomeIcon icon={faPlay} /> :
-          <FontAwesomeIcon icon={faLink} />
+        video !== undefined ?
+          play === false ? <FontAwesomeIcon icon={faPlay} /> : null : null
+      }
+      {
+        video === undefined ? <FontAwesomeIcon icon={faLink} /> : null
       }
       {
         video && play ?

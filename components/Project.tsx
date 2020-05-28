@@ -1,5 +1,5 @@
 // rome-ignore lint/importDefaultBasename
-import React from 'react';
+import React, { useState } from 'react';
 
 // rome-ignore lint/importDefaultBasename
 import styled from 'styled-components';
@@ -8,7 +8,7 @@ import Tag from './common/Tag';
 import Title from './common/Title';
 import Img from './common/Img';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export interface Props {
@@ -22,8 +22,9 @@ export interface Props {
 }
 
 function Project({className, title, description, tags, img, links, video}: Props) {
+  const [play, setPlay] = useState(false);
   return <div className={className}>
-      <Img img={img} video={video} />
+      <Img img={img} video={video} play={play} setPlay={(bool: boolean) => setPlay(bool)} />
       <Title>{title}</Title>
       <P>{description}</P>
       <div className="tags">
@@ -32,6 +33,12 @@ function Project({className, title, description, tags, img, links, video}: Props
       })}
       </div>
       <div className="links">
+        {
+          video &&
+            <button onClick={() => setPlay(true)}>
+              <FontAwesomeIcon icon={faPlay} />
+            </button>
+        }
         {
           links?.github &&
             <a href={links.github}>
@@ -59,6 +66,14 @@ export default styled(Project)`
   max-width: calc(100vw - 64px);
   vertical-align:top;
   white-space: normal;
+
+  button {
+    cursor: pointer;
+    font-size: 100%;
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
 
   > * {
     width: 100%;
