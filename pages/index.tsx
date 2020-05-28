@@ -404,14 +404,15 @@ export default styled(Index)`
   .horizontal {
     position: relative;
     width: 100vw;
-    overflow: scroll;
     /* 
+    overflow: scroll;
     overflow-y: hidden;
+    */
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    white-space: nowrap; */
+    white-space: nowrap; 
     
     > div {
       display: inline-block;
