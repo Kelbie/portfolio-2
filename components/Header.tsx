@@ -89,7 +89,7 @@ export default styled(Header)`
     /* padding-right: max(32px, calc(50vw - 800px / 2)); */
   }
 
-  a {
+  .links > a {
     margin-left: 16px;
     height: max-content;
     
