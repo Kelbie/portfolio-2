@@ -12,7 +12,7 @@ import Gradient from '../components/Gradient';
 import Post from '../components/Post';
 import Title from '../components/common/Title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle, faTools } from "@fortawesome/free-solid-svg-icons";
+import { faBookOpen, faBriefcase, faRss, faCode, faInfo, faInfoCircle, faTools, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faOsi, faDev, faReact, faNodeJs, faHtml5, faCss3, faPython, faAdobe, faGit, faDocker, faJs } from '@fortawesome/free-brands-svg-icons';
 
 export interface Props {
@@ -83,11 +83,13 @@ const projects: Project[] = [
   },
   {
     title: "University Key Manager",
+    img: "/RGUKeyManager.png",
     description: `A Key Manager which was built to replace a cumbersome excel document which was previously being used.`,
     tags: ["react", "firebase", "material ui", "scss"]
   },
   {
     title: "Cryptocurrency Wallet & Exchange",
+    img: "/Index.png",
     description: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
     tags: ["node", "express", "jquery"]
   }
@@ -221,6 +223,19 @@ function Index({className}: Props) {
               img="/Rome.png"
               description={`I am a core contributor on the Rome team.`}
               tags={['typescript']} />
+            </div>
+          </Section>
+          <Section>
+            <div className="inline">
+              <FontAwesomeIcon icon={faCoffee} />
+              <h3>HACKATHONS</h3>
+            </div>
+            <div className="horizontal">
+              <Project title="RGUNetZero"
+              video={"https://youtu.be/3jv-3uo-xhk"}
+              links={{github: "https://github.com/KevinKelbie/rgu-hack-climate-website"}}
+              description={`RGUNetZero was a website created in an RGU hackathon where the goal was to create a website that helped display the issues climate change has on our world.`}
+              tags={['react']} />
             </div>
           </Section>
           <Section>

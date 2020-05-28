@@ -31,7 +31,7 @@ function Img({className, img, video, play, setPlay}: Props) {
         video && play ?
         <ReactPlayer url={video} playing width="100%" height="100%" config={{
           youtube: {
-            playerVars: { modestbranding: 1 }
+            playerVars: { version: 3, modestbranding: 1, controls: 1, rel: 0, showinfo: 0 },
           }
         }} /> : <>
           <img src={img} alt=""/>
