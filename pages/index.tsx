@@ -405,8 +405,8 @@ export default styled(Index)`
     position: relative;
     width: 100vw;
     overflow: scroll;
-    overflow-y: hidden;
     /* 
+    overflow-y: hidden;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
