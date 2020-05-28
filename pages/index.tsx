@@ -405,9 +405,6 @@ export default styled(Index)`
     position: relative;
     width: 100vw;
     overflow-x: scroll;
-    /* -webkit-transform: translateZ(0px);
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-perspective: 1000; */
     left: 50%;
     right: 50%;
     margin-left: -50vw;
