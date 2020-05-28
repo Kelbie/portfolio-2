@@ -1,17 +1,20 @@
 <div className="blog">
+
+# Student Authentication using Azure & Node.js
+
 <span>Suppose you want to offer students a discount on your website how would you do that? You could authenticate their email address but that takes them off the website because they must leave the page to go look at their email. What if you could log them in with a student portal they are familiar with.</span>
 
 That's where Azure Active Directory comes to the rescue!
 
 Azure Active Directory is used by thousands of educational institutions all across the world which makes it the ideal platform for authenticating students. The Azure Login Portal also provides students with a familiar splash screen
 
-# Registering your web app Clone the repo 
+## Registering your web app Clone the repo 
 
 <span>To get started we are going to clone an Azure boilerplate for Node.js which can be found in</span> <a href="">this GitHub repo</a>.
 
-# Azure Configuration 
+## Azure Configuration 
 
-##  Whitelisting Students 
+###  Whitelisting Students 
 
 An important consideration to keep in mind is that you cannot restrict access to your login portal to users that have already used it at least once.
 
@@ -24,7 +27,7 @@ An important consideration to keep in mind is that you cannot restrict access to
 
 <span>For more information on Azure whitelisting/blacklisting view the</span> <a href="">official Azure documentation</a>.
 
-# Greeting users with a personalized splash screen
+## Greeting users with a personalized splash screen
 
 This is optional but it's probably a good idea to ask the user what educational institution they are a part of before sending them to the Azure Login Portal, that way they are presented with a familiar splash screen and are less likely to try and sign in with a personal outlook account.
 
@@ -42,11 +45,11 @@ module.exports = [
 ]
 ```
 
-# Important Considerations
+## Important Considerations
 
 Whilst this is a great method for verifying a users status as a student it should not be the only method used for authentication because it's possible for users to lose access to their student email addresses which can lock users out of your website.
 
-# Production Environment
+## Production Environment
 
-# Conclusion
+## Conclusion
 </div>
