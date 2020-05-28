@@ -404,8 +404,8 @@ export default styled(Index)`
   .horizontal {
     position: relative;
     width: 100vw;
-    /* 
     overflow: scroll;
+    /* 
     overflow-y: hidden;
     */
     left: 50%;
