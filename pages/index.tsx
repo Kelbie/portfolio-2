@@ -406,13 +406,18 @@ export default styled(Index)`
     width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: auto;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     white-space: nowrap; 
     
+    @supports (-webkit-touch-callout: none) {
+      /* this is an accessbility vs aesthetic trade-off for iOS, we chose accessibility here. */
+      -webkit-overflow-scrolling: scroll;
+      z-index: 1000;
+    }
+
     > div {
       display: inline-block;
       margin-right: 32px;
