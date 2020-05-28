@@ -35,19 +35,19 @@ function Project({className, title, description, tags, img, links, video}: Props
       <div className="links">
         {
           video &&
-            <button onClick={() => setPlay(true)}>
+            <button aria-label="play" onClick={() => setPlay(true)}>
               <FontAwesomeIcon icon={faPlay} />
             </button>
         }
         {
           links?.github &&
-            <a href={links.github}>
+            <a aria-label="source" href={links.github}>
               <FontAwesomeIcon  icon={faGithub} />
             </a>
         }
         {
           links?.website &&
-            <a href={links.website}>
+            <a aria-label="website" href={links.website}>
               <FontAwesomeIcon  icon={faLink} />
             </a>
         }
