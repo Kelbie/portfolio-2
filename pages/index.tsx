@@ -416,13 +416,13 @@ export default styled(Index)`
       /* this is an accessbility vs aesthetic trade-off for iOS, we chose accessibility here. */
       -webkit-overflow-scrolling: scroll;
       z-index: 1000;
-      
+
       h3 {
-        color: #347EF5;
+        color: #3486C9;
       }
 
       * {
-        fill: #347EF5;
+        fill: #3486C9;
       }
     }
 
