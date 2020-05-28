@@ -79,7 +79,7 @@ export default styled(Header)`
     z-index: 100;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .links {
