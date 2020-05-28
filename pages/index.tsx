@@ -255,6 +255,7 @@ function Index({className}: Props) {
             </div>
               <Project title="RGUNetZero"
               video={"https://youtu.be/3jv-3uo-xhk"}
+              img={"/RGUNetZero.png"}
               links={{github: "https://github.com/KevinKelbie/rgu-hack-climate-website"}}
               description={`RGUNetZero was a website created in an RGU hackathon where the goal was to create a website that helped display the issues climate change has on our world.`}
               tags={['react']} />
