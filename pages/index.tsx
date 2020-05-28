@@ -404,15 +404,7 @@ export default styled(Index)`
   .horizontal {
     position: relative;
     width: 100vw;
-    overflow: scroll;
-
-    /* https://stackoverflow.com/a/38505679/9537359 */
-    -webkit-transform: translateZ(0px);
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-perspective: 1000;
-    /* 
-    overflow-y: hidden;
-    */
+    overflow-x: scroll;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
