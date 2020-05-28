@@ -34,7 +34,7 @@ const projects: Project[] = [
     img: "/StudentLog.png",
     video: "https://youtu.be/j8Ma9xcLlm0",
     description: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.`,
-    tags: ["react", "graphql", "node", "redux"],
+    tags: ["react", "graphql", "node", "redux", "postgresql"],
     links: {
       github: "https://github.com/KevinKelbie/student-log",
       website: "https://studentlog.io/",
@@ -45,7 +45,7 @@ const projects: Project[] = [
     description: `An off-chain scaling solution for Blockchain-based cryptocurrencies.`,
     img: "/Statechain.png",
     video: "https://www.youtube.com/watch?v=3tdQJ4k8goE",
-    tags: [],
+    tags: ["react", "node", "express", "postgresql", "graphql"],
     links: {
       github: "",
       website: "https://statechain.info/"
@@ -56,7 +56,7 @@ const projects: Project[] = [
     description: `A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, debugging, code formatting, and code executing on the Bitcoin network.`,
     video: "https://youtu.be/A1wjnfsDRJs",
     img: "/VSCodeBitcoin.png",
-    tags: [],
+    tags: ["typescript", "miniscript"],
     links: {
       github: "https://github.com/KevinKelbie/vscode-bitcoin",
     }
@@ -73,13 +73,13 @@ const projects: Project[] = [
   {
     title: "Korean Typing Game",
     description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the syllabic blocks into individual syllables to make them easier to identify.`,
-    tags: [],
+    tags: ["react"],
     links: {}
   },
   {
     title: "Github Enhancement Suite",
     description: `The GitHub Enhancement Suite is a set of miscellaneous tools to enhance a developers GitHub experience.`,
-    tags: [],
+    tags: ["react"],
     links: {}
   },
   {
