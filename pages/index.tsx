@@ -72,7 +72,7 @@ const projects: Project[] = [
   },
   {
     title: "Korean Typing Game",
-    description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the syllabic blocks into individual syllables to make them easier to identify.`,
+    description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify.`,
     tags: ["react"],
     links: {}
   },
