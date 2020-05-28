@@ -234,31 +234,32 @@ function Index({className}: Props) {
               }
               </div>
           </Section>
+          <div className="h">
+
+
           <Section>
             <div className="inline">
               <FontAwesomeIcon icon={faOsi} />
               <h3>OPEN SOURCE</h3>
             </div>
-            <div className="horizontal">
               <Project title="Rome"
               img="/Rome.png"
               description={`I am a core contributor on the Rome team.`}
+              links={{github: "https://github.com/romejs/rome", website: "https://romejs.dev"}}
               tags={['typescript']} />
-            </div>
           </Section>
           <Section>
             <div className="inline">
               <FontAwesomeIcon icon={faCoffee} />
               <h3>HACKATHONS</h3>
             </div>
-            <div className="horizontal">
               <Project title="RGUNetZero"
               video={"https://youtu.be/3jv-3uo-xhk"}
               links={{github: "https://github.com/KevinKelbie/rgu-hack-climate-website"}}
               description={`RGUNetZero was a website created in an RGU hackathon where the goal was to create a website that helped display the issues climate change has on our world.`}
               tags={['react']} />
-            </div>
           </Section>
+          </div>
           <Section>
             <div className="inline">
               <FontAwesomeIcon icon={faRss} />
@@ -377,7 +378,7 @@ export default styled(Index)`
     } 
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 690px) {
     .h {
       flex-direction: column;
       > :first-child {
