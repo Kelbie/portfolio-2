@@ -150,7 +150,7 @@ function Index({className}: Props) {
                     <div className="dot" style={{gridRow: index*4}}></div>
                     <Title>{company}</Title>
                     <P>{title}</P>
-                    <P>{year}</P>
+                    <P className="year">{year}</P>
                   </>
                 })
               }
@@ -180,7 +180,7 @@ function Index({className}: Props) {
                     <div className="dot" style={{gridRow: index*4}}></div>
                     <Title>{company}</Title>
                     <P>{title}</P>
-                    <P>{year}</P>
+                    <P className="year">{year}</P>
                   </>
                 })
               }
@@ -253,6 +253,11 @@ export default styled(Index)`
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-column-gap: 1ch;
+
+    
+    p:nth-of-type(2) {
+      margin-bottom: 32px;
+    }
 
     > * {
       grid-column: 2;
