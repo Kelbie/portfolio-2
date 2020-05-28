@@ -107,10 +107,6 @@ export default styled(Project)`
       margin-top: 8px;
     }
 
-    ${Img} img {
-      opacity: 0.66;
-      filter: blur(1px);
-    }
     margin-bottom: -8px;
   }
 

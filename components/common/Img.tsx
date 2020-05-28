@@ -59,6 +59,10 @@ export default styled(Img)`
     svg {
       opacity: 0.99;
     }
+    img {
+      opacity: 0.66;
+      filter: blur(1px);
+    }
   }
   
   svg {
