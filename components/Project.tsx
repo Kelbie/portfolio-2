@@ -66,6 +66,10 @@ export default styled(Project)`
 
   .links {
     display: flex;
+
+    > * {
+      margin-right:24px;
+    }
   }
 
   a {
@@ -104,6 +108,7 @@ export default styled(Project)`
 
 
   .tags {
+    margin-bottom: 12px;
     > * {
       display: inline-block;
       margin-right: 8px;
