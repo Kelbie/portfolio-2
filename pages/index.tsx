@@ -93,7 +93,7 @@ const projects: Project[] = [
     img: "/Index.png",
     links: { github: "https://github.com/KevinKelbie/index" },
     description: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
-    tags: ["node", "express", "jquery"]
+    tags: ["node", "express", "jquery", "ejs"]
   }
 ]
 
