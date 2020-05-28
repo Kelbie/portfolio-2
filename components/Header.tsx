@@ -16,7 +16,9 @@ export interface Props {
 function Header({className}: Props) {
   return <div className={className}>
     <div>
-      <h1>Kevin Kelbie</h1>
+      <a href="/">
+        <h1>Kevin Kelbie</h1>
+      </a>
       <div className="links">
         <a href={"https://www.linkedin.com/in/kelbie/"}>
           <FontAwesomeIcon  icon={faLinkedin} />
@@ -54,6 +56,10 @@ export default styled(Header)`
   left: 0;
 
   padding: 0 32px;
+
+  > div > a {
+    text-decoration: none;
+  }
 
   h1 {
     margin: 0;
