@@ -2,3 +2,4 @@
   from = "https://rome-vscode.kelbie.dev"
   to = "https://marketplace.visualstudio.com/items?itemName=rome.rome"
   status = 301
+  force = true
