@@ -34,7 +34,7 @@ const projects: Project[] = [
     img: "/StudentLog.png",
     video: "https://youtu.be/j8Ma9xcLlm0",
     description: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.`,
-    tags: ["react", "graphql", "node", "redux", "postgresql"],
+    tags: ["React", "GraphQL", "Node", "Redux", "PostgreSQL"],
     links: {
       github: "https://github.com/KevinKelbie/student-log",
       website: "https://studentlog.io/",
@@ -45,7 +45,7 @@ const projects: Project[] = [
     description: `An off-chain scaling solution for Blockchain-based cryptocurrencies.`,
     img: "/Statechain.png",
     video: "https://www.youtube.com/watch?v=3tdQJ4k8goE",
-    tags: ["react", "node", "express", "postgresql", "graphql"],
+    tags: ["React", "Node", "Express", "PostgreSQL", "GraphQL"],
     links: {
       github: "",
       website: "https://statechain.info/"
@@ -56,7 +56,7 @@ const projects: Project[] = [
     description: `A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, debugging, code formatting, and code executing on the Bitcoin network.`,
     video: "https://youtu.be/A1wjnfsDRJs",
     img: "/VSCodeBitcoin.png",
-    tags: ["typescript", "miniscript"],
+    tags: ["TypeScript", "Miniscript"],
     links: {
       github: "https://github.com/KevinKelbie/vscode-bitcoin",
     }
@@ -65,7 +65,7 @@ const projects: Project[] = [
     title: "Bitcoin GraphQL Proxy",
     img: "/BitcoinGraphQL.png",
     description: `An API that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.`,
-    tags: ["bitcoin", "graphql", "node", "postgresql"],
+    tags: ["Bitcoin", "GraphQL", "Node", "PostgreSQL"],
     links: {
       github: "https://github.com/KevinKelbie/bitcoin-graphql",
     }
@@ -73,27 +73,27 @@ const projects: Project[] = [
   {
     title: "Korean Typing Game",
     description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify which cannot be done with unicode.`,
-    tags: ["react"],
+    tags: ["React"],
     links: {}
   },
   {
     title: "Github Enhancement Suite",
     description: `The GitHub Enhancement Suite is a set of miscellaneous tools to enhance a developers GitHub experience.`,
-    tags: ["react"],
+    tags: ["React"],
     links: {}
   },
   {
     title: "University Key Manager",
     img: "/RGUKeyManager.png",
     description: `A Key Manager which was built to replace a cumbersome excel document which was previously being used.`,
-    tags: ["react", "firebase", "material ui", "scss"]
+    tags: ["React", "Firebase", "MaterialUI", "SCSS"]
   },
   {
     title: "Cryptocurrency Wallet & Exchange",
     img: "/Index.png",
     links: { github: "https://github.com/KevinKelbie/index" },
     description: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
-    tags: ["node", "express", "jquery", "ejs"]
+    tags: ["Node", "Express", "jQuery", "EJS"]
   }
 ]
 
@@ -246,7 +246,7 @@ function Index({className}: Props) {
               img="/Rome.png"
               description={`I am a core contributor on the Rome team.`}
               links={{github: "https://github.com/romejs/rome", website: "https://romejs.dev"}}
-              tags={['typescript']} />
+              tags={['TypeScript']} />
           </Section>
           <Section>
             <div className="inline">
@@ -258,7 +258,7 @@ function Index({className}: Props) {
               img={"/RGUNetZero.png"}
               links={{github: "https://github.com/KevinKelbie/rgu-hack-climate-website"}}
               description={`RGUNetZero was a website created in an RGU hackathon where the goal was to create a website that helped display the issues climate change has on our world.`}
-              tags={['react']} />
+              tags={['React']} />
           </Section>
           </div>
           <Section>
@@ -276,7 +276,7 @@ function Index({className}: Props) {
                   That's where Azure Active Directory comes to the rescue!
                 </P>
               </>}
-              tags={['Azure', 'NodeJS']} />
+              tags={['Azure', 'Node']} />
             </div>
           </Section>
         </div>
