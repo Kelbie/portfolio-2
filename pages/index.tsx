@@ -109,7 +109,7 @@ function Index({className}: Props) {
             <P>Hi, my name is Kevin Kelbie and I'm a 4th year student at Robert Gordon University studying Computing (Application Software Development).</P>
             <P>In my free time, I like to work on programming projects some of which you can see below.</P>
             <div className="inline" style={{display: "inline"}}>
-              <P style={{marginRight: "12px", display: "inline"}}>If you need to contact me you can send me an email at:</P><a href="">kevin@kelbie.dev</a>
+              <P style={{marginRight: "12px", display: "inline"}}>If you need to contact me you can send me an email at:</P><a href="mailto://kevin@kelbie.dev">kevin@kelbie.dev</a>
             </div>
           </div>
         </Section>
