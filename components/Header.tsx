@@ -23,7 +23,7 @@ function Header({className}: Props) {
         <a href={"https://www.linkedin.com/in/kelbie/"}>
           <FontAwesomeIcon  icon={faLinkedin} />
         </a>
-        <a href={"https://github.com/KevinKelbie/"}>
+        <a href={"https://github.com/kelbie/"}>
           <FontAwesomeIcon  icon={faGithub} />
         </a>
       </div>
