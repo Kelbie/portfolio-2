@@ -53,7 +53,7 @@ const projects: Project[] = [
   },
   {
     title: "VSCode Bitcoin Extension",
-    description: `A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, debugging, code formatting, and code executing on the Bitcoin network.`,
+    description: `A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, and code formatting`,
     video: "https://youtu.be/A1wjnfsDRJs",
     img: "/VSCodeBitcoin.png",
     tags: ["TypeScript", "Miniscript"],

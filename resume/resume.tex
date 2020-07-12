@@ -1,0 +1,183 @@
+\documentclass[a4paper]{article}
+    \usepackage{hyperref}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Kevin Kelbie}}\\
+	Aberdeen, Scotland $\cdot$ \href{mailto:kevin@kelbie.dev}{kevin@kelbie.dev} $\cdot$ 07599 878870 $\cdot$ \href{https://kelbie.dev}{Webite} $\cdot$ \href{https://github.com/kelbie}{GitHub}\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Robert Gordon University}\hfill Aberdeen, Scotland\\
+BSc (Hons), Computing (Application Software Development), \textit{1st Class} \hfill 2018 - 2020\\
+\vspace{2mm}
+\textbf{North East Scotland College}\hfill Aberdeen, Scotland\\
+HND, Computing \hfill 2016 - 2018\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Robert Gordon University} \hfill Aberdeen, Scotland\\
+\textit{Software Developer} \hfill 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Implement a recommendation engine to help customers have better search results.
+\end{itemize}
+
+\textbf{Agile Resource} \hfill Aberdeen, Scotland\\
+\textit{Software Developer} \hfill 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Client-side / server-side rendered React
+	\item Built a landing page \& MVP prototype that helped raise £3000 in funding for the startup.
+%	\item Set up CI/CD on Azure to catch bugs and deploy website with ease.
+%	\item Worked on UI/UX to ensure it was accessible to everyone.
+%	\item Optimised page load time by 50\% by cropping, shrinking and lazy loading images.
+\end{itemize}
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages: & JavaScript, Python, PostgreSQL, TypeScript, GraphQL, HTML5, CSS3  \\
+	Frameworks:                   & NodeJS, ReactJS, ExpressJS, Redux, NextJS             \\
+	Tools \& Technologies: & Firebase, Lets Encrypt, Git, Azure (Pipelines), Linux, Docker, NPM, Nginx \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Projects ====%
+\header{Projects}
+
+{\textbf{StudentLog}} {\sl React, GraphQL, Node, Redux, PostgreSQL} \hfill \href{https://studentlog.io}{Website} $\cdot$ \href{https://www.youtube.com/watch?v=j8Ma9xcLlm0}{Demo} $\cdot$ \href{https://github.com/Kelbie/student-log}{Source}\\
+StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.\\
+\vspace*{2mm}
+
+{\textbf{Statechain Server}} {\sl React, Node, Express, PostgreSQL, GraphQL} \hfill \href{https://statechain.info}{Website} $\cdot$ \href{https://www.youtube.com/watch?v=3tdQJ4k8goE}{Demo} $\cdot$ \href{https://statechain.info}{Source}\\
+An off-chain scaling solution for Blockchain-based cryptocurrencies.\\
+\vspace*{2mm}
+
+{\textbf{VSCode Bitcoin Extension}} {\sl TypeScript, Miniscript, Bitcoin} \hfill \href{https://bitcoin-vscode.kelbie.dev}{Install} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Demo} $\cdot$ \href{https://github.com/Kelbie/vscode-bitcoin}{Source}\\
+A VSCode Extension with rich support for Bitcoin Script including features such as IntelliSense, linting, and code formatting.\
+\vspace*{2mm}
+
+{\textbf{Korean Typing Game}} {\sl React} \hfill \href{https://hangul.kelbie.dev}{Website} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Demo} $\cdot$  \href{https://bitcoin-vscode.kelbie.dev}{Source}\\
+A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify.\
+\vspace*{2mm}
+
+{\textbf{Bitcoin GraphQL Proxy}} {\sl Node, GraphQL, Bitcoin, PostgreSQL} \hfill \href{https://bitcoin-vscode.kelbie.dev}{Source} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Demo}\\
+An API that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.\
+\vspace*{2mm}
+
+%{\textbf{GitHub Enhancement Suite}} {\sl React} \hfill \href{https://bitcoin-vscode.kelbie.dev}{Install} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Demo}\\
+%An API that extends the functionality of the Bitcoin Core API which is the defacto api for Bitcoin. It allows for more fine-grain control over the result of the output which makes for more efficient queries.\
+%\vspace*{2mm}
+
+%{\textbf{University Key Manager}} {\sl React, Firebase, Material UI, SCSS} \hfill \href{https://bitcoin-vscode.kelbie.dev}{Demo} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Source}\\
+%A Key Manager which was built to replace a cumbersome excel document which was previously being used.\
+%\vspace*{2mm}
+
+%{\textbf{Cryptocurrency Wallet \& Exchange}} {\sl Node, Express, jQuery, EJS} \hfill \href{https://bitcoin-vscode.kelbie.dev}{Demo} $\cdot$ \href{https://bitcoin-vscode.kelbie.dev}{Source}\\
+%This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.\
+%\vspace*{2mm}
+
+%==== Open Source ====%
+\header{Open Source}
+\textbf{Rome}  {\sl TypeScript} \hfill \href{https://romefrontend.dev/}{Website} $\cdot$  \href{https://github.com/romefrontend/rome/pulls?q=is\%3Apr+is\%3Amerged+author\%3AKelbie}{Pull Requests} \\
+Core Contributor\\
+\vspace*{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Implemented the first VSCode extension for Rome using the language server protocol (LSP) which is available at \href{https://rome-vscode.kelbie.dev}{https://rome-vscode.kelbie.dev}
+	\item Implemented an ast explorer for Rome available at \href{https://rome-explorer.kelbie.dev}{https://rome-explorer.kelbie.dev}
+	\item Implemented and unit tested multiple rules for the linter.
+\end{itemize}
+\vspace*{2mm}
+
+%==== Hackathons ====%
+\header{Hackathons}
+\textbf{RGUHack} {\sl React} \hfill  \href{https://github.com/Kelbie/rgu-hack-climate-website}{Github} $\cdot$ \href{https://www.youtube.com/watch?v=3jv-3uo-xhk}{Demo}\\
+\vspace*{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item I worked as a team to create a 
+	\item Implemented an ast explorer for Rome available at \href{https://rome-explorer.kelbie.dev}{https://rome-explorer.kelbie.dev}
+	\item Implemented and unit tested multiple rules for the linter.
+\end{itemize}
+\vspace*{2mm}
+%\begin{itemize} \itemsep 1pt
+%	\item ...
+%	\item Blog
+%	\item awd
+%\end{itemize}
+
+\end{document}
