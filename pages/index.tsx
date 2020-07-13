@@ -72,29 +72,30 @@ const projects: Project[] = [
   },
   {
     title: "Korean Typing Game",
+    img: "/Korean.png",
     description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify which cannot be done with unicode.`,
     tags: ["React"],
     links: {}
   },
-  {
-    title: "Github Enhancement Suite",
-    description: `The GitHub Enhancement Suite is a set of miscellaneous tools to enhance a developers GitHub experience.`,
-    tags: ["React"],
-    links: {}
-  },
-  {
-    title: "University Key Manager",
-    img: "/RGUKeyManager.png",
-    description: `A Key Manager which was built to replace a cumbersome excel document which was previously being used.`,
-    tags: ["React", "Firebase", "MaterialUI", "SCSS"]
-  },
-  {
-    title: "Cryptocurrency Wallet & Exchange",
-    img: "/Index.png",
-    links: { github: "https://github.com/KevinKelbie/index" },
-    description: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
-    tags: ["Node", "Express", "jQuery", "EJS"]
-  }
+  // {
+  //   title: "Github Enhancement Suite",
+  //   description: `The GitHub Enhancement Suite is a set of miscellaneous tools to enhance a developers GitHub experience.`,
+  //   tags: ["React"],
+  //   links: {}
+  // },
+  // {
+  //   title: "University Key Manager",
+  //   img: "/RGUKeyManager.png",
+  //   description: `A Key Manager which was built to replace a cumbersome excel document which was previously being used.`,
+  //   tags: ["React", "Firebase", "MaterialUI", "SCSS"]
+  // },
+  // {
+  //   title: "Cryptocurrency Wallet & Exchange",
+  //   img: "/Index.png",
+  //   links: { github: "https://github.com/KevinKelbie/index" },
+  //   description: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
+  //   tags: ["Node", "Express", "jQuery", "EJS"]
+  // }
 ]
 
 function Index({className}: Props) {
