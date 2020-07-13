@@ -47,8 +47,17 @@ const projects: Project[] = [
     video: "https://www.youtube.com/watch?v=3tdQJ4k8goE",
     tags: ["React", "Node", "Express", "PostgreSQL", "GraphQL"],
     links: {
-      github: "",
+      github: "https://github.com/Kelbie/statechain-server-js",
       website: "https://statechain.info/"
+    }
+  },
+  {
+    title: "Korean Typing Game",
+    img: "/Korean.png",
+    description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify which cannot be done with unicode.`,
+    tags: ["React"],
+    links: {
+      website: "https://korean.kelbie.dev/"
     }
   },
   {
@@ -69,13 +78,6 @@ const projects: Project[] = [
     links: {
       github: "https://github.com/KevinKelbie/bitcoin-graphql",
     }
-  },
-  {
-    title: "Korean Typing Game",
-    img: "/Korean.png",
-    description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify which cannot be done with unicode.`,
-    tags: ["React"],
-    links: {}
   },
   // {
   //   title: "Github Enhancement Suite",
