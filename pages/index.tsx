@@ -248,7 +248,7 @@ function Index({className}: Props) {
               <Project title="Rome"
               img="/Rome.png"
               description={`I am a core contributor on the Rome team.`}
-              links={{github: "https://github.com/romejs/rome", website: "https://romejs.dev"}}
+              links={{github: "https://github.com/romejs/rome", website: "http://romefrontend.dev/"}}
               tags={['TypeScript']} />
           </Section>
           <Section>
