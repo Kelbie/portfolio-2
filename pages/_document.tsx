@@ -30,6 +30,17 @@ export default class MyDocument extends Document {
   render() {
     return <Html lang="en">
       <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131018891-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+          window.dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131018891-2');
+      </script>
+
         <title>Kevin Kelbie</title>
       </Head>
       <body>
