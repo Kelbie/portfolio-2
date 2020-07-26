@@ -265,7 +265,7 @@ function Index({className}: Props) {
               tags={['React']} />
           </Section>
           </div>
-          <Section>
+          {/* <Section>
             <div className="inline">
               <FontAwesomeIcon icon={faRss} />
               <h3>BLOG</h3>
@@ -282,7 +282,7 @@ function Index({className}: Props) {
               </>}
               tags={['Azure', 'Node']} />
             </div>
-          </Section>
+          </Section> */}
         </div>
       </div>;
 }
