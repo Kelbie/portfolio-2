@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "StudentLog",
     img: "/StudentLog.png",
     video: "https://youtu.be/j8Ma9xcLlm0",
-    description: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.`,
+    description: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder.`,
     tags: ["React", "GraphQL", "Node", "Redux", "PostgreSQL"],
     links: {
       github: "https://github.com/KevinKelbie/student-log",
