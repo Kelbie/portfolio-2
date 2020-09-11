@@ -52,7 +52,7 @@ const projects: Project[] = [
     }
   },
   {
-    title: "Korean Typing Game",
+    title: "Hangul.cool: Korean Typing Game",
     img: "/Korean.png",
     video: "https://youtu.be/uxMzXLikebs",
     description: `A Korean Typing Game designed to help people learn how to type in Korean by breaking down the multi-syllabic blocks into individual syllables to make them easier to identify which cannot be done with unicode.`,
